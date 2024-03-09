@@ -1,68 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boosting in Progress</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f0f0; /* Light mode background */
+            color: #333; /* Dark gray instead of black for light mode text */
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body, html {
+                background-color: #121212; /* Dark mode background */
+                color: #c7c7c7; /* Light gray for dark mode text, ensuring it's not black */
+            }
+        }
+
+        div {
+            font-size: 20px;
+            animation: colorChange 10s infinite;
+        }
+
+        @keyframes colorChange {
+            0%, 100% { color: #3498db; } /* Blue */
+            17% { color: #9b59b6; } /* Purple */
+            34% { color: #e74c3c; } /* Red */
+            51% { color: #f1c40f; } /* Yellow */
+            68% { color: #2ecc71; } /* Green */
+            85% { color: #1abc9c; } /* Teal */
+        }
+
+        @media (max-width: 600px) {
+            div {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Boosting in Progress&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body, html {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Montserrat', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f0f0f0; /* Light mode background */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333; /* Dark gray instead of black for light mode text */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.5s, color 0.5s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (prefers-color-scheme: dark) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>body, html {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>background-color: #121212; /* Dark mode background */</p>
-<p class="p1"><span class="Apple-converted-space">                </span>color: #c7c7c7; /* Light gray for dark mode text, ensuring it's not black */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>div {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: colorChange 10s infinite;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes colorChange {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>0%, 100% { color: #3498db; } /* Blue */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>17% { color: #9b59b6; } /* Purple */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>34% { color: #e74c3c; } /* Red */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>51% { color: #f1c40f; } /* Yellow */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>68% { color: #2ecc71; } /* Green */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>85% { color: #1abc9c; } /* Teal */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 600px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>div {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div&gt;Boosting in Progress&lt;/div&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div>Boosting in Progress</div>
 </body>
 </html>
