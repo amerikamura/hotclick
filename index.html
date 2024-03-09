@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progress Update</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body, html {
             height: 100%;
@@ -13,24 +13,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background-color: #e0e0e0;
             color: #424242;
+            overflow: hidden;
         }
         h1 {
-            font-size: 24px;
+            font-size: 5vw; /* Use viewport width to make the font size responsive */
+            text-align: center;
             font-weight: 700;
             color: #3498db;
             animation: pulse 2s infinite;
+            margin: 0;
+            padding: 0 5%;
+            box-sizing: border-box;
         }
         @keyframes pulse {
-            0% { color: #3498db; }
+            0%, 100% { color: #3498db; }
             50% { color: #9b59b6; }
-            100% { color: #3498db; }
         }
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
             h1 {
-                font-size: 20px;
+                font-size: 10vw;
             }
         }
     </style>
