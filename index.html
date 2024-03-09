@@ -3,50 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boosting in Progress</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Progress Update</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body, html {
             height: 100%;
             margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f0f0f0; /* Light mode background */
-            color: #333; /* Dark gray instead of black for light mode text */
-            transition: background-color 0.5s, color 0.5s;
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0e0e0;
+            color: #424242;
         }
-
-        @media (prefers-color-scheme: dark) {
-            body, html {
-                background-color: #121212; /* Dark mode background */
-                color: #c7c7c7; /* Light gray for dark mode text, ensuring it's not black */
-            }
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #3498db;
+            animation: pulse 2s infinite;
         }
-
-        div {
-            font-size: 20px;
-            animation: colorChange 10s infinite;
+        @keyframes pulse {
+            0% { color: #3498db; }
+            50% { color: #9b59b6; }
+            100% { color: #3498db; }
         }
-
-        @keyframes colorChange {
-            0%, 100% { color: #3498db; } /* Blue */
-            17% { color: #9b59b6; } /* Purple */
-            34% { color: #e74c3c; } /* Red */
-            51% { color: #f1c40f; } /* Yellow */
-            68% { color: #2ecc71; } /* Green */
-            85% { color: #1abc9c; } /* Teal */
-        }
-
         @media (max-width: 600px) {
-            div {
-                font-size: 16px;
+            h1 {
+                font-size: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <div>Boosting in Progress</div>
+    <h1>Boosting in Progress</h1>
 </body>
 </html>
